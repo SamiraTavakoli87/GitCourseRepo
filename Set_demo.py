@@ -1,4 +1,5 @@
 #unordered data type
+# mutable
 # You cannot define smpty set using literals
 
 emptySet = set()
@@ -16,3 +17,10 @@ print(len(odd))
 print(odd.intersection(power))
 print('=' * 40)
 print(len(odd.union(power)))
+
+print('=' * 40)
+print(odd.intersection_update(power))
+print(odd)
+
+power_frozen = frozenset(power)
+po
